@@ -1,0 +1,31 @@
+{
+  "name": "docker-ci-cd-demo",
+  "version": "1.0.0",
+  "description": "A hands-on Docker project demonstrating containerization and a CI/CD pipeline using GitHub Actions.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"No tests yet\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dubem90/docker-ci-cd-demo.git"
+  },
+  "keywords": [
+    "docker",
+    "ci-cd",
+    "github-actions",
+    "node",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dubem90/docker-ci-cd-demo/issues"
+  },
+  "homepage": "https://github.com/dubem90/docker-ci-cd-demo#readme",
+  "dependencies": {
+    "express": "^4.22.1"
+  }
+}
