@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: docker-ci-cd-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: docker-ci-cd-demo
+  template:
+    metadata:
+      labels:
+        app: docker-ci-cd-demo
+    spec:
+      containers:
+        - name: docker-ci-cd-demo
+          image: dubem090/docker-ci-cd-demo:latest
+          ports:
+            - containerPort: 3000
+
+          livenessProbe:
+  httpGet:
+    path: /
+    port: 3000
+  initialDelaySeconds: 5
+  periodSeconds: 10
+
+readinessProbe:
+  httpGet:
+    path: /
+    port: 3000
+  initialDelaySeconds: 5
+  periodSeconds: 10

@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: docker-ci-cd-demo-ingress
+spec:
+  rules:
+    - host: docker-demo.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: docker-ci-cd-demo-service
+                port:
+                  number: 80
