@@ -6,6 +6,8 @@
 **Google Cloud (Cloud Run)**
 ![GCP Deployment Proof](./gcp-deployment-success.png)
 
+Cost-Optimization: To save cloud credits, this environment is not kept live 24/7. However, it can be fully redeployed in under 5 minutes using the "How to Run" steps below.
+
 How to Run (Multi-Cloud Deployment)
 This project demonstrates a manual CI/CD workflow, deploying a containerized application to both Google Cloud Run and Azure Container Apps.
 
