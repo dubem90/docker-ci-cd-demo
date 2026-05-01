@@ -6,7 +6,6 @@
 **Google Cloud (Cloud Run)**
 ![GCP Deployment Proof](./gcp-deployment-success.png)
 
-
 How to Run (Multi-Cloud Deployment)
 This project demonstrates a manual CI/CD workflow, deploying a containerized application to both Google Cloud Run and Azure Container Apps.
 
