@@ -55,6 +55,7 @@ gcloud run deploy cicd-demo-gcp `
   --region us-central1 `
   --platform managed `
   --allow-unauthenticated
+
 🛠️ Challenges Overcome
 Tenant Inactivity: Resolved Azure "Blocked Tenant" errors by activating a fresh subscription and verifying identity.
 
